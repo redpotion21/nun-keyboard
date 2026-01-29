@@ -2,8 +2,31 @@
 #SingleInstance Force
 
 toggle := false
+LastPress := 0
+CooldownTime := 300
+global on :=1
 
-^!e:: {    ; Ctrl + Alt + E to toggle
+~LCtrl & RCtrl::
+~RCtrl & LCtrl::
+ {    ; Ctrl + Alt + E to toggle
+    global on
+    if (on < 1){
+        return
+}
+    global LastPress
+    global CooldownTime
+    ; Calculate time since last success
+    CurrentTime := A_TickCount
+    TimePassed := CurrentTime - LastPress
+
+    if (TimePassed < CooldownTime) {
+        ; It's too soon! Ignore this input.
+        return
+    }
+
+    ; If we got here, it's been long enough. Update the timer.
+    LastPress := CurrentTime
+
     global toggle
     toggle := !toggle
     
@@ -64,3 +87,35 @@ l::Send ":_いかないで:"
 ; keep adding more like ↓
 ;c::Send ":_your_emoji_here:"
 #HotIf
+
+global EscCount := 0
+global LastEscTime := 0
+
+$Esc::
+{
+    global on
+    global EscCount, LastEscTime
+    currentTime := A_TickCount
+    
+    ; 1.0s Interval check
+    if (currentTime - LastEscTime > 1000) {
+        EscCount := 1
+    } else {
+        EscCount += 1
+    }
+    
+    LastEscTime := currentTime
+    
+    if (EscCount >= 4) {
+         on := 0
+        MsgBox("ぬんキーボードを終了します/Shutting down...", "Exit", "4096 Iconi")
+        ExitApp()
+    }
+    
+    ; Show progress to user
+    ToolTip("Exit Progress: " . EscCount . "/4")
+    SetTimer(() => ToolTip(), -800)
+    
+    ; Keep original Esc functionality
+    Send("{Esc}")
+}
