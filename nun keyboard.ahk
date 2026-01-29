@@ -113,9 +113,10 @@ $Esc::
     }
     
     ; Show progress to user
-    ToolTip("Exit Progress: " . EscCount . "/4")
-    SetTimer(() => ToolTip(), -800)
+    ;ToolTip("Exit Progress: " . EscCount . "/4")
+    ;SetTimer(() => ToolTip(), -800)
     
     ; Keep original Esc functionality
     Send("{Esc}")
+     KeyWait("Esc")
 }
