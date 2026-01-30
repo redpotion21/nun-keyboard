@@ -11,7 +11,8 @@ Type Sora chan's membership emojis using keyboards. Much faster than searching i
 # How to use
 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bf6cc3e-8411-42ce-b7f4-93636bc18212" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d217c6b1-4e68-41ba-88e2-45950546209f" />
+
 
 
 
