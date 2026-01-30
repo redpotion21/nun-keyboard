@@ -1,6 +1,6 @@
 # ぬんキーボード
 
-日本語  |  [English](Readme.en.md)  |  [한국어](Readme.kr.md)
+日本語  |  [English](readme.en.md)  |  [한국어](Readme.kr.md)
 
 そらちゃんの配信のメンバースタンプをキーボードで書く！！エモジタブに探す方法より早い！！
 
