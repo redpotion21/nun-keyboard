@@ -84,8 +84,29 @@ l::Send ":_いかないで:"
 
 .::Send ":_ぬん1:"
 /::Send ":_ぬん2:"
-; keep adding more like ↓
-;c::Send ":_your_emoji_here:"
+
+1::Send ":_そらザウルス:"
+2::Send ":_まいっかちゃん:"
+3::Send ":_ぬんぬんちゃん:"
+4::Send ":_そっか:"
+5::Send ":_ミニソーダちゃん:"
+6::Send ":_ソーダちゃん:"
+7::Send ":_かさの絵文字:"
+8::Send ":_ゴンッ:"
+9::Send ":_止まらねえぞ:"
+0::Send ":_Imびっくり:"
+-::Send ":_スンスタンプ:"
+
+F1::Send ":_Hi1:"
+F2::Send ":_Hi2:"
+F3::Send ":_Hi3:"
+F4::Send ":_Hi4:"
+
+F5::Send ":_はい1:"
+F6::Send ":_はい2:"
+F7::Send ":_はい3:"
+F8::Send ":_はい4:"
+
 #HotIf
 
 global EscCount := 0
