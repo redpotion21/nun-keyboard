@@ -46,71 +46,81 @@ RemoveToolTip() {
 }
 
 #HotIf toggle
-q::Send ":_がんばるぞ:"
-w::Send ":_やったー:"
-e::Send ":_はくしゅ:"
-r::Send ":_わらう:"
+q::PasteText(":_がんばるぞ:")
+w::PasteText(":_やったー:")
+e::PasteText(":_はくしゅ:")
+r::PasteText( ":_わらう:")
 
-a::Send ":_おおぉ:"
-s::Send ":_たすかる:"
-d::Send ":_赤ちゃん:"
-f::Send ":_かわいい:"
+a::PasteText( ":_おおぉ:")
+s::PasteText( ":_たすかる:")
+d::PasteText( ":_赤ちゃん:")
+f::PasteText( ":_かわいい:")
 
-z::Send ":_新ぬんぬん:"
-x::Send ":_おみず:"
-c::Send ":_アの絵文字:"
-v::Send ":_泣いちゃう:"
+z::PasteText( ":_新ぬんぬん:")
+x::PasteText( ":_おみず:")
+c::PasteText( ":_アの絵文字:")
+v::PasteText( ":_泣いちゃう:")
 
-t::Send ":_ナンデヨー:"
-y::Send ":_もぐもぐ:"
-u::Send ":_じゃあ敵だね:"
-i::Send ":_らっかちゃん:"
+t::PasteText( ":_ナンデヨー:")
+y::PasteText( ":_もぐもぐ:")
+u::PasteText( ":_じゃあ敵だね:")
+i::PasteText( ":_らっかちゃん:")
 
-g::Send ":_ナイス:"
-h::Send ":_てんてんてん:"
-j::Send ":_ジトー:"
-k::Send ":_ザリガニちゃん:"
+g::PasteText( ":_ナイス:")
+h::PasteText( ":_てんてんてん:")
+j::PasteText( ":_ジトー:")
+k::PasteText( ":_ザリガニちゃん:")
 
-b::Send ":_ヤメテヨー:"
-n::Send ":_ああ迷子:"
-m::Send ":_あん肝ペンラピンク:"
-,::Send ":_あん肝ペンラ青:"
+b::PasteText( ":_ヤメテヨー:")
+n::PasteText( ":_ああ迷子:")
+m::PasteText( ":_あん肝ペンラピンク:")
+,::PasteText( ":_あん肝ペンラ青:")
 
-o::Send ":_きゅっ:"
-p::Send ":_ぬんぬん1:"
-[::Send ":_あん肝:"
-]::Send ":_おうた:"
+o::PasteText( ":_きゅっ:")
+p::PasteText( ":_ぬんぬん1:")
+[::PasteText( ":_あん肝:")
+]::PasteText( ":_おうた:")
 
-l::Send ":_いかないで:"
-`;::Send ":_おかえり:"
-'::Send ":_こんそめ:"
+l::PasteText( ":_いかないで:")
+`;::PasteText( ":_おかえり:")
+'::PasteText( ":_こんそめ:")
 
-.::Send ":_ぬん1:"
-/::Send ":_ぬん2:"
+.::PasteText( ":_ぬん1:")
+/::PasteText( ":_ぬん2:")
 
-1::Send ":_そらザウルス:"
-2::Send ":_まいっかちゃん:"
-3::Send ":_ぬんぬんちゃん:"
-4::Send ":_そっか:"
-5::Send ":_ミニソーダちゃん:"
-6::Send ":_ソーダちゃん:"
-7::Send ":_かさの絵文字:"
-8::Send ":_ゴンッ:"
-9::Send ":_止まらねえぞ:"
-0::Send ":_Imびっくり:"
--::Send ":_スンスタンプ:"
+1::PasteText( ":_そらザウルス:")
+2::PasteText( ":_まいっかちゃん:")
+3::PasteText( ":_ぬんぬんちゃん:")
+4::PasteText( ":_そっか:")
+5::PasteText( ":_ミニソーダちゃん:")
+6::PasteText( ":_ソーダちゃん:")
+7::PasteText( ":_かさの絵文字:")
+8::PasteText( ":_ゴンッ:")
+9::PasteText( ":_止まらねえぞ:")
+0::PasteText( ":_Imびっくり:")
+-::PasteText( ":_スンスタンプ:")
 
-F1::Send ":_Hi1:"
-F2::Send ":_Hi2:"
-F3::Send ":_Hi3:"
-F4::Send ":_Hi4:"
+F1::PasteText( ":_Hi1:")
+F2::PasteText( ":_Hi2:")
+F3::PasteText( ":_Hi3:")
+F4::PasteText( ":_Hi4:")
 
-F5::Send ":_はい1:"
-F6::Send ":_はい2:"
-F7::Send ":_はい3:"
-F8::Send ":_はい4:"
+F5::PasteText( ":_はい1:")
+F6::PasteText( ":_はい2:")
+F7::PasteText( ":_はい3:")
+F8::PasteText( ":_はい4:")
 
 #HotIf
+
+PasteText(str) {
+    oldClip := ClipboardAll()  ; Save current clipboard
+    A_Clipboard := str         ; Set new text
+    if ClipWait(1) {           ; Wait up to 1s for clipboard to be ready
+        Send "^v"              ; Paste
+        Sleep 100              ; Short delay so the app "catches" the paste
+    }
+    A_Clipboard := oldClip     ; Restore original clipboard
+}
 
 global EscCount := 0
 global LastEscTime := 0
@@ -143,4 +153,5 @@ $Esc::
     ; Keep original Esc functionality
     Send("{Esc}")
      KeyWait("Esc")
+
 }
