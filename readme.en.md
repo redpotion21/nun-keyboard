@@ -1,6 +1,6 @@
 # nun-keyboard
 
-[日本語](Readme.md)  |  English  |  [한국어](Readme.kr.md)
+[日本語](README.md)  |  English  |  [한국어](readme.kr.md)
 
 Type Sora chan's membership emojis using keyboards. Much faster than searching in emoji tabs manually!!
 
