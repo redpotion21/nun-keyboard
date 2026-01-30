@@ -1,5 +1,7 @@
 # nun-keyboard/ぬんキーボード
 
+[日本語]  |  [English](Readme.en.md)  |  [한국어](Readme.kr.md)
+
 Type Sora chan's membership emojis using keyboards. Much faster than searching in emoji tabs manually!!
 
 そらちゃんの配信のメンバースタンプをキーボードで書く！！エモジタブに探す方法より早い！！
