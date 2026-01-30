@@ -1,6 +1,6 @@
 # 눈 키보드
 
-[日本語](README.md)  |  [English](Readme.en.md)  |  한국어
+[日本語](README.md)  |  [English](readme.en.md)  |  한국어
 
 키보드만으로 소라의 방송 내에서 멤버쉽 스탬프를 입력한다!! 이모지 탭에서 일일히 찾는것 보다 빠름!!
 
