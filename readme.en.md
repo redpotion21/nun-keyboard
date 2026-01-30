@@ -9,7 +9,11 @@ Type Sora chan's membership emojis using keyboards. Much faster than searching i
 2.Download nun keyboard.ahk in this page and run that file
 
 # How to use
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92548632-e21b-4592-85ae-a0df4e3c7d4b" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3bf6cc3e-8411-42ce-b7f4-93636bc18212" />
+
+
 
 1.Press (Left ctrl + Right Ctrl) to turn ON/OFF the emoji typing mode
 
