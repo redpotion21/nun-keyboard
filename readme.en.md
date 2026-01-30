@@ -20,4 +20,4 @@ Type Sora chan's membership emojis using keyboards. Much faster than searching i
 
 2.In emoji mode, go to Sora chan's channels and type the key that is mapped to emoji above!!
 
-3.To turn off, (esc) 4 times in a row with 1 or shorter second of interval.
+**3.To turn off, (esc) 4 times in a row with 1 or shorter second of interval.**
