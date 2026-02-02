@@ -27,10 +27,10 @@ https://github.com/user-attachments/assets/ddea8ab6-9f65-4f6c-ba4b-25060df5b4da
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/80d6b0aa-18f4-4ae8-a826-88e8f5f8973f" />
 
 
-1.(L Ctrl + R Ctrl)を同時に押せばぬんスタンプモードになる。また押せば普通のキーボードになる。
+1.ぬんキーボードのON/OFF: 左Ctrl + 右Ctrl
 
-2.スタンプモードでそらちゃんの配信にマッピングされたキーを押せて簡単にスタンプを入力。
+2.スタンプを入力: ぬんキーボードONの状態で、割り当てられたキーを押す
 
-**3.(Esc)ボタンを1秒以内の間隔に4回押すと、ぬんキーボードを強制終了する。**
+**3.完全終了: Escキーを4回連続で押す**
 
 
