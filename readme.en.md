@@ -2,6 +2,10 @@
 
 [日本語](README.md)  |  English  |  [한국어](readme.kr.md)
 
+
+https://github.com/user-attachments/assets/4b68a82e-dcaf-4137-8a13-f457bc917986
+
+
 Type Sora chan's membership emojis using keyboards. Much faster than searching in emoji tabs manually!!
 
 # How to install
