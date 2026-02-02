@@ -1,7 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 #SingleInstance Force
 
-TrayTip "(L Ctrl + R Ctrl)でON/OFF `n Esc連続4回で強制終了", "ぬんキーボード", 1
+TrayTip "左Ctrl + 右CtrlでON/OFF `n Esc連続4回で強制終了", "ぬんキーボード", 1
 SetTimer () => ToolTip(), -5000
 
 toggle := false
@@ -153,4 +153,5 @@ $Esc::
     ; Keep original Esc functionality
     Send("{Esc}")
      KeyWait("Esc")
+
 }
