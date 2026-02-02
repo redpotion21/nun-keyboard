@@ -2,8 +2,7 @@
 
 日本語  |  [English](readme.en.md)  |  [한국어](readme.kr.md)
 
-<video src="video.mp4" controls="controls" style="max-width: 100%;"></video>
-
+<video src="[video.mp4](https://github.com/user-attachments/assets/13d6731a-da02-4c65-8d58-99aa8ccbc410)" controls="controls" style="max-width: 100%;"></video>
 
 そらちゃんの配信のメンバースタンプをキーボードで書く！！エモジタブに探す方法より早い！！
 
