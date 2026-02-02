@@ -2,7 +2,11 @@
 
 日本語  |  [English](readme.en.md)  |  [한국어](readme.kr.md)
 
-<video src="[ぬんキーボード　チラ見せ.mp4](https://github.com/user-attachments/assets/13d6731a-da02-4c65-8d58-99aa8ccbc410)" controls="controls" style="max-width: 100%;"></video>
+
+
+https://github.com/user-attachments/assets/ddea8ab6-9f65-4f6c-ba4b-25060df5b4da
+
+
 
 そらちゃんの配信のメンバースタンプをキーボードで書く！！エモジタブに探す方法より早い！！
 
